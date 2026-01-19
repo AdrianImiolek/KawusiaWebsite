@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,10 +17,12 @@ export default function Nav() {
   };
 
   return (
-    <nav className="nav z-80 bg-darker-brown/90 md:bg-darker-brown/50 md:bg-clip-padding md:backdrop-blur-md md:backdrop-filter sticky top-0">
-      <header className="header wrapper grid grid-cols-2 ">
+    <nav className="nav bg-darker-brown/90 md:bg-darker-brown/50 sticky top-0 z-80 md:bg-clip-padding md:backdrop-blur-md md:backdrop-filter">
+      <header className="header wrapper grid grid-cols-2">
         <div className="nav-logo max-w-40 self-center">
-          <img src="/kawusia-white.png" />
+          <Link to="/" onClick={ () => window.scrollTo({top:0})}>
+            <img src="/kawusia-white.png" />
+          </Link>
         </div>
         <button
           className="hamburger z-100 cursor-pointer justify-self-end md:hidden"
@@ -36,7 +38,12 @@ export default function Nav() {
           <ul className="links-mobile">
             {links.map(({ name, link }, index) => (
               <a href={link} key={index}>
-                <li className="link-mobile m-3 p-3 text-body" onClick={toggleMenu}>{name}</li>
+                <li
+                  className="link-mobile text-body m-3 p-3"
+                  onClick={toggleMenu}
+                >
+                  {name}
+                </li>
               </a>
             ))}
           </ul>
@@ -47,7 +54,9 @@ export default function Nav() {
           <ul className="links-desktop flex">
             {links.map(({ name, link }, index) => (
               <a href={link} key={index}>
-                <li className="link-desktop text-body p-3 hover:text-orange-hover duration-300" >{name}</li>
+                <li className="link-desktop text-body hover:text-orange-hover p-3 duration-300">
+                  {name}
+                </li>
               </a>
             ))}
           </ul>
