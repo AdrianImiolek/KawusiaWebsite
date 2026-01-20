@@ -17,8 +17,8 @@ export default function Nav() {
   };
 
   return (
-    <nav className="nav bg-darker-brown/90 md:bg-darker-brown/50 sticky top-0 z-80 md:bg-clip-padding md:backdrop-blur-md md:backdrop-filter">
-      <header className="header wrapper grid grid-cols-2">
+    <nav className="nav bg-darker-brown/90 md:bg-darker-brown/50 fixed top-0 z-80 md:bg-clip-padding md:backdrop-blur-md md:backdrop-filter w-full">
+      <div className="header wrapper grid grid-cols-2">
         <div className="nav-logo max-w-40 self-center">
           <Link to="/" onClick={ () => window.scrollTo({top:0})}>
             <img src="/kawusia-white.png" />
@@ -61,7 +61,7 @@ export default function Nav() {
             ))}
           </ul>
         </div>
-      </header>
+      </div>
     </nav>
   );
 }

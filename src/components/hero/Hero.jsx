@@ -1,8 +1,10 @@
+import Nav from "../nav/Nav";
 import "./hero.css";
 export default function Hero() {
   return (
-    <section className="hero relative min-h-[95vh] md:pt-20">
-      <div className="wrapper">
+    <header className="hero relative min-h-screen">
+      <Nav />
+      <div className="wrapper  pt-20 md:pt-30 lg:pt-50">
         <h1 className="text-h1 font-black">
           {" "}
           <span className="text-orange">Kawiarnia</span> Kawusia - <br />{" "}
@@ -27,6 +29,6 @@ export default function Hero() {
           </a>
         </div>
       </div>
-    </section>
+    </header>
   );
 }

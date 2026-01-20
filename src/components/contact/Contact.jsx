@@ -26,9 +26,9 @@ export default function Contact() {
             </p>
             <p className="contact-email-send">
               E-mail:{" "}
-              <a href="mailto:kawusia@kontakt.pl">
+              <a href="mailto:kontakt@kawusia.pl">
                 {" "}
-                <span className="text-orange">kawusia@kontakt.pl</span>
+                <span className="text-orange">kontakt@kawusia.pl</span>
               </a>
             </p>
           </div>

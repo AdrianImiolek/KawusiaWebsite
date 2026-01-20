@@ -37,7 +37,7 @@ export default function Cookies() {
 
       {/* Cookie icon - appears after accepting */}
       <div
-        className={` ${isConsented ? "scale-100" : "scale-0"} cookie-icon bg-darker-brown fixed bottom-5 left-5 z-50 cursor-pointer rounded-full  duration-300 hover:scale-110`}
+        className={` ${isConsented ? "scale-100" : "scale-0"} cookie-icon bg-darker-brown fixed bottom-5 left-5 z-50 cursor-pointer rounded-full  duration-300 hover:bg-orange`}
         onClick={() => setIsConsented(false)}
       >
         <i className="bx bx-cookie p-3 text-4xl text-white"></i>

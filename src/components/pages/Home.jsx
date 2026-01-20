@@ -8,16 +8,15 @@ import Nav from "../nav/Nav.jsx";
 
 export default function Home() {
   return (
-      <div className="app">
-        <Nav />
-        <main>
-          <Hero id="home" />
-          <About id="about" />
-          <Menu id="menu" />
-          <Contact id="contact" />
-        </main>
-        <Footer />
-        <Cookies />
-      </div>
+    <div className="app">
+      <Hero id="home" />
+      <main>
+        <About id="about" />
+        <Menu id="menu" />
+        <Contact id="contact" />
+      </main>
+      <Footer />
+      <Cookies />
+    </div>
   );
 }

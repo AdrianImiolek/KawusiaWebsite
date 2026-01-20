@@ -39,7 +39,7 @@ export default function Menu() {
     },
     {
       title: "Lura",
-      description: "Bo nie każdy lubi mocną kawę. U nas też możesz pójść na lekkie, wodniste doznania bez oceny",
+      description: "Bo nie każdy lubi mocną kawę. U nas też możesz pójść na lekkie, wodniste doznania bez oceny.",
       img: "/menu-coffees/lura-small.webp",
       price: "10zł",
     },

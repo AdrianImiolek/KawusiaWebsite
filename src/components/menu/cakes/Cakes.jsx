@@ -39,7 +39,7 @@ export default function Menu() {
     },
     {
       title: "Ciasto dnia",
-      description: "Tajemnicze i słodkie - prawie jak Twoja kochanka",
+      description: "Tajemnicze i słodkie - prawie jak Twoja kochanka.",
       img: "/menu-cakes/cake-of-the-day-small.webp",
       price: "10zł",
     },
