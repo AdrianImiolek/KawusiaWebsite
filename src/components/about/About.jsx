@@ -2,12 +2,12 @@ import AboutCards from "./AboutCards";
 
 export default function About() {
   const cards = [
-    { img: "/presenting-coffee.webp", title: "Wiemy co kupujemy" },
-    { img: "/beans.webp", title: "Wybieramy dobre ziarna" },
-    { img: "/grinder.webp", title: "Mielimy na świeżo" },
-    { img: "/brewing.webp", title: "Tu dzieje się magia" },
-    { img: "/preparing.webp", title: "Prawie gotowa" },
-    { img: "/serving.webp", title: "No to pijemy" },
+    { img: "/presenting-coffee.webp", title: "Wiemy co kupujemy", alt:"Mężczyzna w białej bluzce trzymający przed sobą opakowanie kawy." },
+    { img: "/beans.webp", title: "Wybieramy dobre ziarna",alt:"Drewniana miseczka z wysypanymi ziarnami kawy na stole." },
+    { img: "/grinder.webp", title: "Mielimy na świeżo", alt:"Ziarna kawy wysypane na czarnym stole, z kolbą z ekspresu, w której jest zmielona kawa.", },
+    { img: "/brewing.webp", title: "Tu dzieje się magia", alt: "Ekspres przygotowujący kawę." },
+    { img: "/preparing.webp", title: "Prawie gotowa", alt:"Dekerowanie kawy przy użyciu mleka." },
+    { img: "/serving.webp", title: "No to pijemy", alt:"Mężczyzna w czarnym fartuchu podający kawę." },
   ];
 
   return (
@@ -34,8 +34,8 @@ export default function About() {
         </p>
 
         <div className="about-cards grid md:mt-8 md:mb-8 md:grid-cols-3">
-          {cards.slice(0, 3).map(({ img, title }, index) => (
-            <AboutCards key={index} img={img} title={title} />
+          {cards.slice(0, 3).map(({ img, title, alt }, index) => (
+            <AboutCards key={index} img={img} title={title} alt={alt}/>
           ))}
         </div>
 
@@ -59,8 +59,8 @@ export default function About() {
           To kawa, do której chce się wracać. Bez spiny, bez pośpiechu.
         </p>
         <div className="about-cards mt-3 mb-3 grid md:mt-8 md:mb-8 md:grid-cols-3">
-          {cards.slice(3, 6).map(({ img, title }, index) => (
-            <AboutCards key={index} img={img} title={title} />
+          {cards.slice(3, 6).map(({ img, title, alt }, index) => (
+            <AboutCards key={index} img={img} title={title} alt={alt} />
           ))}
         </div>
       </div>

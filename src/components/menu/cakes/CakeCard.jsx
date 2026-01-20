@@ -1,16 +1,16 @@
-export default function CoffeeCard({ title, description, img, price }) {
+export default function CoffeeCard({ title, description, img, price,alt }) {
   return (
-    <div className="menu-cakes-card bg-dark-brown group relative grid grid-rows-[auto_1fr_auto] rounded-3xl duration-300 hover:scale-105">
+    <article className="menu-cakes-card bg-dark-brown group relative grid grid-rows-[auto_1fr_auto] rounded-3xl duration-300 hover:scale-105">
       <img
         className="menu-cakes-img card-img h-48 w-full rounded-t-3xl object-cover"
         src={img}
-        alt=""
+        alt={alt}
       />
 
       <div className="menu-cakes-card-text p-2">
-        <p className="menu-cakes-card-title text-body text-orange p-1 font-black">
+        <h3 className="menu-cakes-card-title text-h3 text-orange p-1 font-black">
           {title}
-        </p>
+        </h3>
         <p className="menu-cakes-card-description text-body-sm p-3 text-white">
           {description}
         </p>
@@ -21,6 +21,6 @@ export default function CoffeeCard({ title, description, img, price }) {
           {price}
         </p>
       </div>
-    </div>
+    </article>
   );
 }
