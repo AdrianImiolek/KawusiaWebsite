@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isHamburgerActive, setIsHamburgerActive] = useState(false);
+
 
   const links = [
     { name: "O nas", link: "#about" },
@@ -17,10 +17,10 @@ export default function Nav() {
   };
 
   return (
-    <nav className="nav bg-darker-brown/90 md:bg-darker-brown/50 fixed top-0 z-80 md:bg-clip-padding md:backdrop-blur-md md:backdrop-filter w-full">
+    <nav className="nav bg-darker-brown/90 md:bg-darker-brown/50 fixed top-0 z-80 w-full md:bg-clip-padding md:backdrop-blur-md md:backdrop-filter">
       <div className="header wrapper grid grid-cols-2">
         <div className="nav-logo max-w-40 self-center">
-          <Link to="/" onClick={ () => window.scrollTo({top:0})}>
+          <Link to="/" onClick={() => window.scrollTo({ top: 0 })}>
             <img src="/kawusia-white.png" />
           </Link>
         </div>
