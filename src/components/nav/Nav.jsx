@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [isHamburgerActive, setIsHamburgerActive] = useState(false);
 
   const links = [
     { name: "O nas", link: "#about" },
